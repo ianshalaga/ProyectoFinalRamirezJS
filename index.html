@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Toastify JS CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+    <!-- Scripts -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="./js/script.js"></script>
+
+    <title>PreEntrega3Ramirez</title>
+  </head>
+
+  <body class="container d-flex flex-column align-items-center">
+    <h1>CoderHouse: JavaScript</h1>
+    <!-- Polinómio cuadrático -->
+    <div id="cuadratic">
+      <!-- <h2>Polinomio cuadrático: ax^2+bx+c=0</h2> -->
+      <h2>Polinomio cuadrático:</h2>
+      <img
+        id="imagen"
+        src="./assets/images/poly.jpg"
+        alt="Polnomio de segundo grado y su resolvente"
+      />
+      <form class="d-flex flex-column align-items-center" action="">
+        <!-- a -->
+        <div>
+          <label for="constant-a">Constante numérica a</label>
+          <input id="constant-a" type="text" placeholder="123" />
+        </div>
+
+        <!-- b -->
+        <div>
+          <label for="constant-b">Constante numérica b</label>
+          <input id="constant-b" type="text" />
+        </div>
+
+        <!-- c -->
+        <div>
+          <label for="constant-c">Constante numérica c</label>
+          <input id="constant-c" type="text" />
+        </div>
+
+        <button id="calcular" type="button">Calcular raíces</button>
+      </form>
+    </div>
+
+    <div id="results" class="d-flex flex-column align-items-center"></div>
+
+    <div
+      id="examples"
+      class="d-flex flex-column align-items-center bg-secondary"
+    >
+      <p>Puedes probar con alguno de los siguientes ejemplos</p>
+    </div>
+
+    <!-- Scripts -->
+  </body>
+</html>
